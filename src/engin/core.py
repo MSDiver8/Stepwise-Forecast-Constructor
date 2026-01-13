@@ -638,7 +638,7 @@ def Auto_forecast(Data : dict,
     Date = pd.date_range(df.iloc[-1,0] + (df.iloc[-1,0] - df.iloc[-2,0]),
                          periods = dic_auto_params['Forecast_horizon'],
                          freq = Freq
-                         ).strftime('%d.%m.%Y').tolist()
+                         )#.strftime('%d.%m.%Y')#.tolist()
     # Записываем итоговый результат в виде датафрейма
     results = pd.DataFrame({
     'Дата': Date,
