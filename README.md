@@ -61,6 +61,9 @@ Data = {
 
 ```python
 from engin import Auto_forecast
-results = Auto_forecast(Data)
-print(results)
+from engin.demo import load_demo_data
+
+data = load_demo_data()
+result = Auto_forecast(data[0])
+result
 ```
