@@ -17,20 +17,27 @@
 
 ## 📁 Структура проекта
 
+
+
 ```
-Stepwise Forecast Constructor/
-│
-├── engin.py                # Основной движок: все функции автоматизации
-│                           # Auto_forecast(), Auto_params_selection(),
-│                           # MAPE_step_by_step(), Psevdo_forecast_test_MAPE()
-│                           # Базовые эконометрические функции прогнозирования:
-│                           # RW(), RWD(), RWS(), RWDS(), TS()
-│
-├── example.ipynb           # Примеры использования
-│
-├── data_for_test.json    # Пример набора данных
-│
-└── README.md
+Stepwise-Forecast-Constructor/
+├── LICENSE
+├── README.md
+├── pyproject.toml
+├── examples/
+│   └── example.ipynb   # Пример работы программы
+└── src/
+    └── engin/
+        ├── __init__.py
+        ├── core.py       # Основной движок: все функции автоматизации
+        │                 # Auto_forecast(), Auto_params_selection(),
+        │                 # MAPE_step_by_step(), Psevdo_forecast_test_MAPE()
+        │                 # Базовые эконометрические функции прогнозирования:
+        │                 # RW(), RWD(), RWS(), RWDS(), TS()
+        │
+        ├── demo.py
+        └── data/
+            └── data_for_test.json # Пример набора данных
 ```
 
 ---
